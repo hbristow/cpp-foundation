@@ -1,9 +1,19 @@
-dist: trusty
+sudo: require
+language: cpp
+compiler: clang
 
-addons:
-    apt:
-        packages:
-            - wget
-            - pkg-config
-            - libgtest-dev
-            - libgperf-dev
+before_install:
+    # C++14
+    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r
+    - sudo apt-get update
+
+install:
+    - sudo apt-get install pip
+
+script:
+    # Codecov
+    - codecov
+
+after_success:
+    # Codecov
+    - bash <(curl -s https://codecov.io/bash)
