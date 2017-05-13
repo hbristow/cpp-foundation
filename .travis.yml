@@ -11,7 +11,7 @@ before_install:
     - sudo apt-get update
     # Codecov
     - sudo apt-get install clang
-    - sudo apt-cache search clang-3.4
+    - sudo apt-cache search clang
     - sudo apt-get install clang-format-3.4
     - sudo apt-get install bazel
     - sudo pip install codecov
