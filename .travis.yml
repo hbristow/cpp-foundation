@@ -4,11 +4,10 @@ compiler: clang
 
 before_install:
     # C++14
-    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r
+    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
     - sudo apt-get update
-
-install:
-    - sudo apt-get install pip
+    # Codecov
+    - sudo pip install codecov
 
 script:
     # Codecov
