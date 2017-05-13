@@ -5,6 +5,7 @@ A C++ project foundation with enforced CI, testing, style and static analysis.
 > WARNING: This is not yet functional!
 
 [![Build Status](https://travis-ci.org/hbristow/cpp-foundation.svg?branch=master)](https://travis-ci.org/hbristow/cpp-foundation)
+[![codecov](https://codecov.io/gh/hbristow/cpp-foundation/branch/master/graph/badge.svg)](https://codecov.io/gh/hbristow/cpp-foundation)
 
 
 Features
