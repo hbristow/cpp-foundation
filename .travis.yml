@@ -1,0 +1,9 @@
+dist: trusty
+
+addons:
+    apt:
+        packages:
+            - wget
+            - pkg-config
+            - libgtest-dev
+            - libgperf-dev
