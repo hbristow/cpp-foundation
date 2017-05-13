@@ -5,11 +5,17 @@ compiler: clang
 before_install:
     # C++14
     - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+    - echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+    - curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
     - sudo apt-get update
     # Codecov
+    - sudo apt-get install bazel
     - sudo pip install codecov
 
 script:
+    # Build
+    - bazel build //foundation/...
+    - bazel test //tests/...
     # Codecov
     - codecov
 
