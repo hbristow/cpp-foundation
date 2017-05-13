@@ -9,8 +9,8 @@ before_install:
     - curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
     - sudo apt-get update
     # Codecov
-    - sudo apt-get install clang
-    - sudo apt-get install clang-format
+    - sudo apt-get install clang-3.8
+    - sudo apt-get install clang-format-3.8
     - sudo apt-get install clang-tidy
     - sudo apt-get install bazel
     - sudo pip install codecov
