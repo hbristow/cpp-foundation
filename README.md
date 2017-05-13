@@ -2,11 +2,10 @@ C++ Foundation
 ==============
 A C++ project foundation with enforced CI, testing, style and static analysis.
 
+> WARNING: This is not yet functional!
+
 [![Build Status](https://travis-ci.org/hbristow/cpp-foundation.svg?branch=master)](https://travis-ci.org/hbristow/cpp-foundation)
 
----
-> WARNING: This is not yet functional!
----
 
 Features
 --------
